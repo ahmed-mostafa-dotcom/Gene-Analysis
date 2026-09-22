@@ -1,0 +1,37 @@
+Gene Expression Analysis: control vs treated
+=============================================
+
+Fold change per gene:
+BRCA1  TP53  EGFR   MYC  PTEN  KRAS 
+ 1.71  0.97  2.16  1.29  0.38  2.18 
+
+Genes with fold change > 1.5:
+BRCA1  EGFR  KRAS 
+ 1.71  2.16  2.18 
+
+Expression matrix (genes x conditions):
+      control treated
+BRCA1     5.2     8.9
+TP53      7.8     7.6
+EGFR      3.1     6.7
+MYC       9.4    12.1
+PTEN      6.0     2.3
+KRAS      4.5     9.8
+
+Average expression per gene (rowMeans):
+BRCA1  TP53  EGFR   MYC  PTEN  KRAS 
+ 7.05  7.70  4.90 10.75  4.15  7.15 
+
+Classification counts:
+gene_call
+  upregulated        stable downregulated 
+            4             1             1 
+
+Full summary table:
+  gene control treated fold_change classification
+ BRCA1     5.2     8.9       1.712    upregulated
+  TP53     7.8     7.6       0.974         stable
+  EGFR     3.1     6.7       2.161    upregulated
+   MYC     9.4    12.1       1.287    upregulated
+  PTEN     6.0     2.3       0.383  downregulated
+  KRAS     4.5     9.8       2.178    upregulated
